@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Systems &amp; Software</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="scene"></canvas>
+
+<div class="loading" id="loading">
+  <span>initializing scene</span>
+</div>
+
+<header class="overlay-header">
+  <div class="identity">
+    <span class="name">Alex Chen</span>
+    <span class="role">Backend &amp; Systems Engineer</span>
+  </div>
+  <nav class="overlay-nav">
+    <a href="#" class="nav-hint">drag to explore</a>
+  </nav>
+</header>
+
+<div class="hint-bottom">
+  <p>Five years building distributed systems, APIs, and the infrastructure underneath them. Click a node to look closer.</p>
+</div>
+
+<aside class="detail-panel" id="detail-panel">
+  <button class="close-btn" id="close-panel" aria-label="Close">&times;</button>
+  <div class="detail-content" id="detail-content">
+    <!-- populated by JS -->
+  </div>
+</aside>
+
+<footer class="overlay-footer">
+  <a href="mailto:alex@example.com">alex@example.com</a>
+  <a href="#">github</a>
+  <a href="#">resume</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="scene.js"></script>
+</body>
+</html>
